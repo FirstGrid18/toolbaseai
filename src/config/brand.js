@@ -1,6 +1,6 @@
 const brand = {
   name: "Toolbase Marketplace",
-  tagline: "The AI marketplace for small businesses",
+  tagline: "The marketplace for small business tools",
   contactEmail: "hello@toolbaseai.com",
   colors: {
     accent: "#7C3AED",
