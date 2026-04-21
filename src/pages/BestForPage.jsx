@@ -25,7 +25,7 @@ export default function BestForPage() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: page.headline,
-    url: `${brand.url}/best-for/${slug}`,
+    url: `${brand.url}/use-cases/${slug}`,
     numberOfItems: calloutTools.length,
     itemListElement: calloutTools.map((c, i) => ({
       "@type": "ListItem",
@@ -43,7 +43,7 @@ export default function BestForPage() {
         <meta property="og:title" content={page.headline} />
         <meta property="og:description" content={page.intro.slice(0, 160)} />
         <meta property="og:type" content="article" />
-        <link rel="canonical" href={`${brand.url}/best-for/${slug}`} />
+        <link rel="canonical" href={`${brand.url}/use-cases/${slug}`} />
         <script type="application/ld+json">{JSON.stringify(schemaItemList)}</script>
       </Helmet>
 
@@ -52,7 +52,7 @@ export default function BestForPage() {
         <nav aria-label="Breadcrumb" className="text-sm text-gray-400 mb-6 flex items-center gap-1.5">
           <Link to="/" className="hover:text-primary transition-colors">Home</Link>
           <span>/</span>
-          <span className="text-gray-500">Best For</span>
+          <span className="text-gray-500">Use Cases</span>
           <span>/</span>
           <span className="text-gray-600 font-medium">{page.label}</span>
         </nav>
@@ -168,7 +168,7 @@ export default function BestForPage() {
             {bestForPages.map((p) => (
               <Link
                 key={p.slug}
-                to={`/best-for/${p.slug}`}
+                to={`/use-cases/${p.slug}`}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                   p.slug === slug
                     ? "bg-primary text-white"

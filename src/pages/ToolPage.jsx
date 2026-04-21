@@ -239,7 +239,7 @@ export default function ToolPage() {
             {/* Best for */}
             {tool.best_for?.length > 0 && (
               <div className="bg-white border border-gray-100 rounded-xl p-5 shadow-card">
-                <h3 className="font-semibold text-dark mb-3">Best For</h3>
+                <h3 className="font-semibold text-dark mb-3">Use Cases</h3>
                 <div className="flex flex-wrap gap-2">
                   {tool.best_for.map((tag) => {
                     const labels = {

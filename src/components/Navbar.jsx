@@ -27,7 +27,7 @@ export default function Navbar() {
             Browse Tools
           </NavLink>
           <NavLink
-            to="/best-for/startups"
+            to="/use-cases/startups"
             className={({ isActive }) =>
               `text-sm font-medium transition-colors ${isActive ? "text-primary" : "text-gray-600 hover:text-dark"}`
             }
@@ -84,7 +84,7 @@ export default function Navbar() {
             Browse Tools
           </NavLink>
           <NavLink
-            to="/best-for/startups"
+            to="/use-cases/startups"
             onClick={() => setMenuOpen(false)}
             className="text-sm font-medium text-gray-700 hover:text-primary"
           >

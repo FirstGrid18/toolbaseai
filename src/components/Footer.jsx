@@ -61,7 +61,7 @@ export default function Footer() {
 
           {/* Best for */}
           <div>
-            <h3 className="text-white font-semibold text-sm mb-3">Best For</h3>
+            <h3 className="text-white font-semibold text-sm mb-3">Use Cases</h3>
             <ul className="space-y-2">
               {[
                 { slug: "freelancers", label: "Freelancers" },
@@ -71,7 +71,7 @@ export default function Footer() {
               ].map((page) => (
                 <li key={page.slug}>
                   <Link
-                    to={`/best-for/${page.slug}`}
+                    to={`/use-cases/${page.slug}`}
                     className="text-sm hover:text-white transition-colors"
                   >
                     {page.label}

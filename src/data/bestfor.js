@@ -2,7 +2,7 @@ const bestForPages = [
   {
     slug: "freelancers",
     label: "Freelancers",
-    headline: "Best AI Tools for Freelancers in 2025",
+    headline: "Best tools for freelancers",
     intro:
       "Freelancers need tools that are affordable, easy to set up and cover multiple business functions without a team to support them. The best AI tools for freelancers automate invoicing, help with writing and content creation, manage client communication and keep the books in order — so you can focus on the work that actually earns you money.",
     tag: "solo",
@@ -36,7 +36,7 @@ const bestForPages = [
   {
     slug: "startups",
     label: "Startups",
-    headline: "Best AI Tools for Startups in 2025",
+    headline: "Best tools for startups",
     intro:
       "Early-stage startups need to move fast, stay lean and operate like a team of 20 with a team of 3. The best AI tools for startups replace entire departments — automating marketing, customer support, HR, finance and legal so founders can focus on product and growth. These are the tools chosen by thousands of funded and bootstrapped startups worldwide.",
     tag: "startup",
@@ -70,7 +70,7 @@ const bestForPages = [
   {
     slug: "ecommerce",
     label: "E-Commerce",
-    headline: "Best AI Tools for E-Commerce Businesses in 2025",
+    headline: "Best tools for e-commerce businesses",
     intro:
       "E-commerce businesses face unique challenges: managing customer queries at scale, creating product content efficiently, automating marketing campaigns and keeping finances in order. These AI tools are specifically valuable for online stores and e-commerce entrepreneurs looking to increase conversions, reduce costs and grow faster.",
     tag: "smallteam",
@@ -104,7 +104,7 @@ const bestForPages = [
   {
     slug: "consultants",
     label: "Consultants",
-    headline: "Best AI Tools for Consultants in 2025",
+    headline: "Best tools for consultants",
     intro:
       "Consultants need to look professional, deliver high-quality work and run the business side without a back-office team. The best AI tools for consultants handle proposals, deliverables, client communication, invoicing and business development — letting you focus on strategy and client relationships rather than admin.",
     tag: "solo",

@@ -92,7 +92,7 @@ const comparisons = [
       { feature: "Benefits Management", tool1: "Good", tool2: "Strong — employee focus" },
       { feature: "Onboarding Speed", tool1: "Very fast", tool2: "Moderate" },
       { feature: "Compliance", tool1: "Strong", tool2: "Strong" },
-      { feature: "Best For", tool1: "Contractors + EOR", tool2: "Full-time remote employees" },
+      { feature: "Use Cases", tool1: "Contractors + EOR", tool2: "Full-time remote employees" },
     ],
   },
   {

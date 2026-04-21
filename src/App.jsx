@@ -22,6 +22,7 @@ export default function App() {
             <Route path="/category/:slug" element={<CategoryPage />} />
             <Route path="/compare/:slug" element={<ComparisonPage />} />
             <Route path="/best-for/:slug" element={<BestForPage />} />
+            <Route path="/use-cases/:slug" element={<BestForPage />} />
             <Route path="/submit" element={<SubmitTool />} />
             <Route path="/404" element={<NotFound />} />
             <Route path="*" element={<NotFound />} />
