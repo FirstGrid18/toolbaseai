@@ -90,10 +90,10 @@ export default function Home() {
       <section className="bg-white pt-14 pb-10 px-4 border-b border-gray-100">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-dark leading-tight mb-4">
-            Discover the best AI tools<br className="hidden sm:block" /> for small businesses
+            Find the right tools to run and grow your business
           </h1>
           <p className="text-lg text-gray-500 mb-8 max-w-xl mx-auto">
-            Simple AI tools chosen for small teams, startups and growing businesses worldwide.
+            Simple business tools for getting customers, getting paid, saving time and staying organised.
           </p>
 
           {/* Search */}
@@ -111,7 +111,7 @@ export default function Home() {
               type="search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search AI tools by name, category or use case..."
+              placeholder="Search tools by name, category or need..."
               className="w-full pl-11 pr-4 py-3.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-sm"
               aria-label="Search tools"
             />
