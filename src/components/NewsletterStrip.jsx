@@ -20,10 +20,10 @@ export default function NewsletterStrip() {
       <div className="max-w-xl mx-auto">
         <div className="text-2xl mb-2">📬</div>
         <h2 className="text-lg font-bold text-dark mb-1">
-          Get AI tool discounts, new discoveries and expert picks straight to your inbox.
+          Get tool discounts, new discoveries and practical picks straight to your inbox
         </h2>
         <p className="text-gray-500 text-sm mb-4">
-          Join thousands of SMB owners using {brand.name} to find the right tools. No spam — ever.
+          Join small business owners using Toolbase Marketplace to find the right tools without wasting hours researching.
         </p>
 
         {submitted ? (
