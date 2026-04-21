@@ -8,6 +8,15 @@ import brand from "../config/brand";
 import categories from "../config/categories";
 import tools from "../data/tools";
 
+const QUICK_FILTERS = [
+  { label: "Get more customers", categories: ["sales", "marketing"] },
+  { label: "Get paid", categories: ["finance"] },
+  { label: "Save time", categories: ["automation", "operations"] },
+  { label: "Stay organised", categories: ["operations", "analytics"] },
+  { label: "Build your online presence", categories: ["marketing", "design", "content"] },
+  { label: "Manage your team", categories: ["hr", "customer-support", "operations"] },
+];
+
 const SORT_OPTIONS = [
   { value: "popular", label: "Most Popular" },
   { value: "rated", label: "Highest Rated" },
@@ -34,12 +43,29 @@ function sortTools(list, sortBy) {
 export default function Home() {
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState("all");
+  const [activeQuickFilter, setActiveQuickFilter] = useState(null);
   const [sortBy, setSortBy] = useState("popular");
+
+  function handleQuickFilter(filter) {
+    if (activeQuickFilter?.label === filter.label) {
+      setActiveQuickFilter(null);
+    } else {
+      setActiveQuickFilter(filter);
+      setActiveCategory("all");
+    }
+  }
+
+  function handleCategoryFilter(slug) {
+    setActiveCategory(slug);
+    setActiveQuickFilter(null);
+  }
 
   const filteredTools = useMemo(() => {
     let list = tools;
 
-    if (activeCategory !== "all") {
+    if (activeQuickFilter) {
+      list = list.filter((t) => activeQuickFilter.categories.includes(t.category));
+    } else if (activeCategory !== "all") {
       list = list.filter((t) => t.category === activeCategory);
     }
 
@@ -121,14 +147,34 @@ export default function Home() {
 
       {/* Main content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Quick filter row */}
+        <div className="flex gap-2 overflow-x-auto pb-1 mb-4 scrollbar-hide">
+          {QUICK_FILTERS.map((filter) => {
+            const isActive = activeQuickFilter?.label === filter.label;
+            return (
+              <button
+                key={filter.label}
+                onClick={() => handleQuickFilter(filter)}
+                className={`flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium border transition-colors ${
+                  isActive
+                    ? "bg-primary text-white border-primary"
+                    : "bg-white text-gray-700 border-gray-300 hover:border-primary hover:text-primary"
+                }`}
+              >
+                {filter.label}
+              </button>
+            );
+          })}
+        </div>
+
         {/* Controls row */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
           {/* Category tabs (scrollable on mobile) */}
           <div className="flex gap-2 overflow-x-auto pb-1 flex-1 min-w-0 scrollbar-hide">
             <button
-              onClick={() => setActiveCategory("all")}
+              onClick={() => handleCategoryFilter("all")}
               className={`flex-shrink-0 px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                activeCategory === "all"
+                activeCategory === "all" && !activeQuickFilter
                   ? "bg-primary text-white"
                   : "bg-gray-100 text-gray-600 hover:bg-gray-200"
               }`}
@@ -138,9 +184,9 @@ export default function Home() {
             {categories.map((cat) => (
               <button
                 key={cat.slug}
-                onClick={() => setActiveCategory(cat.slug)}
+                onClick={() => handleCategoryFilter(cat.slug)}
                 className={`flex-shrink-0 px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                  activeCategory === cat.slug
+                  activeCategory === cat.slug && !activeQuickFilter
                     ? "bg-primary text-white"
                     : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                 }`}
@@ -173,8 +219,9 @@ export default function Home() {
         {/* Results count */}
         <p className="text-sm text-gray-400 mb-4">
           {filteredTools.length} tool{filteredTools.length !== 1 ? "s" : ""} found
-          {activeCategory !== "all" && ` in ${categories.find((c) => c.slug === activeCategory)?.label}`}
-          {query && ` for "${query}"`}
+          {activeQuickFilter && ` for "${activeQuickFilter.label}"`}
+          {!activeQuickFilter && activeCategory !== "all" && ` in ${categories.find((c) => c.slug === activeCategory)?.label}`}
+          {query && ` matching "${query}"`}
         </p>
 
         {filteredTools.length === 0 ? (
