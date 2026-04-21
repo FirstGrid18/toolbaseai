@@ -81,7 +81,7 @@ export default function Home() {
     }
 
     return sortTools(list, sortBy);
-  }, [query, activeCategory, sortBy]);
+  }, [query, activeCategory, activeQuickFilter, sortBy]);
 
   // Split tools for ad placement after row 2 (6 cards on desktop)
   const firstBatch = filteredTools.slice(0, 6);
