@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import ToolCard from "../components/ToolCard";
@@ -60,28 +60,23 @@ export default function Home() {
     setActiveQuickFilter(null);
   }
 
-  const filteredTools = useMemo(() => {
-    let list = tools;
-
-    if (activeQuickFilter) {
-      list = list.filter((t) => activeQuickFilter.categories.includes(t.category));
-    } else if (activeCategory !== "all") {
-      list = list.filter((t) => t.category === activeCategory);
-    }
-
-    if (query.trim()) {
-      const q = query.toLowerCase();
-      list = list.filter(
-        (t) =>
-          t.name.toLowerCase().includes(q) ||
-          t.tagline.toLowerCase().includes(q) ||
-          t.description.toLowerCase().includes(q) ||
-          t.category.toLowerCase().includes(q)
-      );
-    }
-
-    return sortTools(list, sortBy);
-  }, [query, activeCategory, activeQuickFilter, sortBy]);
+  let filteredTools = tools;
+  if (activeQuickFilter) {
+    filteredTools = filteredTools.filter((t) => activeQuickFilter.categories.includes(t.category));
+  } else if (activeCategory !== "all") {
+    filteredTools = filteredTools.filter((t) => t.category === activeCategory);
+  }
+  if (query.trim()) {
+    const q = query.toLowerCase();
+    filteredTools = filteredTools.filter(
+      (t) =>
+        t.name.toLowerCase().includes(q) ||
+        t.tagline.toLowerCase().includes(q) ||
+        t.description.toLowerCase().includes(q) ||
+        t.category.toLowerCase().includes(q)
+    );
+  }
+  filteredTools = sortTools(filteredTools, sortBy);
 
   // Split tools for ad placement after row 2 (6 cards on desktop)
   const firstBatch = filteredTools.slice(0, 6);
