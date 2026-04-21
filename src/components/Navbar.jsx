@@ -32,7 +32,7 @@ export default function Navbar() {
               `text-sm font-medium transition-colors ${isActive ? "text-primary" : "text-gray-600 hover:text-dark"}`
             }
           >
-            Best For...
+            Use Cases
           </NavLink>
           <NavLink
             to="/compare/jasper-vs-copy-ai"
@@ -88,7 +88,7 @@ export default function Navbar() {
             onClick={() => setMenuOpen(false)}
             className="text-sm font-medium text-gray-700 hover:text-primary"
           >
-            Best For...
+            Use Cases
           </NavLink>
           <NavLink
             to="/compare/jasper-vs-copy-ai"
