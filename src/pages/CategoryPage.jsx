@@ -101,7 +101,7 @@ export default function CategoryPage() {
         {category.faqs && (
           <section className="bg-gray-50 rounded-2xl p-6 md:p-8">
             <h2 className="text-xl font-bold text-dark mb-6">
-              Frequently Asked Questions — AI {category.label} Tools
+              Frequently Asked Questions - AI {category.label} Tools
             </h2>
             <div className="space-y-6">
               {category.faqs.map((faq, i) => (

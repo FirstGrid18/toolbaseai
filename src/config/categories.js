@@ -9,7 +9,7 @@ const categories = [
     faqs: [
       {
         q: "What is the best free CRM for small businesses?",
-        a: "HubSpot CRM offers a generous free tier with AI email sequences, deal pipelines and contact management — ideal for teams under 10.",
+        a: "HubSpot CRM offers a generous free tier with AI email sequences, deal pipelines and contact management - ideal for teams under 10.",
       },
       {
         q: "How can AI improve my sales outreach?",
@@ -61,7 +61,7 @@ const categories = [
       },
       {
         q: "How does AI help with expense management?",
-        a: "Tools like Dext let you photograph receipts on your phone, and AI automatically categorises and codes them to the right account — saving hours of manual data entry.",
+        a: "Tools like Dext let you photograph receipts on your phone, and AI automatically categorises and codes them to the right account - saving hours of manual data entry.",
       },
     ],
   },
@@ -93,7 +93,7 @@ const categories = [
     icon: "👥",
     color: "bg-purple-100 text-purple-700",
     description:
-      "HR tools for SMBs handle global payroll, contractor management, onboarding and compliance — letting small teams hire globally without an in-house HR department.",
+      "HR tools for SMBs handle global payroll, contractor management, onboarding and compliance - letting small teams hire globally without an in-house HR department.",
     faqs: [
       {
         q: "How can a small business hire international employees?",
@@ -137,7 +137,7 @@ const categories = [
     icon: "🔄",
     color: "bg-indigo-100 text-indigo-700",
     description:
-      "No-code automation platforms let small businesses connect their apps, eliminate repetitive tasks and build custom workflows — no developer required.",
+      "No-code automation platforms let small businesses connect their apps, eliminate repetitive tasks and build custom workflows - no developer required.",
     faqs: [
       {
         q: "What is the best automation tool for a small business?",
@@ -181,7 +181,7 @@ const categories = [
     icon: "📊",
     color: "bg-teal-100 text-teal-700",
     description:
-      "Analytics tools give small businesses clear visibility into website traffic, user behaviour and business performance — without needing a data team.",
+      "Analytics tools give small businesses clear visibility into website traffic, user behaviour and business performance - without needing a data team.",
     faqs: [
       {
         q: "What analytics tool is best for a small business website?",
@@ -215,7 +215,7 @@ const categories = [
       },
       {
         q: "What is SeedLegals best for?",
-        a: "SeedLegals is specifically designed for startups — it excels at funding round documents, SAFE agreements, EMI option schemes and employment contracts.",
+        a: "SeedLegals is specifically designed for startups - it excels at funding round documents, SAFE agreements, EMI option schemes and employment contracts.",
       },
     ],
   },
@@ -251,7 +251,7 @@ const categories = [
     faqs: [
       {
         q: "Can a small business build software without a developer?",
-        a: "Yes. No-code tools like Bubble, Webflow and Airtable let non-technical founders build apps, websites and internal tools without writing code. AI tools like Lovable and Base44 go even further — describe what you want and the AI builds it.",
+        a: "Yes. No-code tools like Bubble, Webflow and Airtable let non-technical founders build apps, websites and internal tools without writing code. AI tools like Lovable and Base44 go even further - describe what you want and the AI builds it.",
       },
       {
         q: "What is the best hosting platform for a small business?",
@@ -259,7 +259,7 @@ const categories = [
       },
       {
         q: "Do I need GitHub if I'm not a developer?",
-        a: "If anyone on your team writes code — even occasionally — GitHub is essential for version control and collaboration. Many no-code tools also integrate with GitHub for deployment workflows.",
+        a: "If anyone on your team writes code - even occasionally - GitHub is essential for version control and collaboration. Many no-code tools also integrate with GitHub for deployment workflows.",
       },
     ],
   },

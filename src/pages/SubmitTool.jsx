@@ -223,7 +223,7 @@ export default function SubmitTool() {
                 type="text"
                 value={form.discount_offer}
                 onChange={handleChange}
-                placeholder="e.g. 20% off first 3 months — code: TOOLBASE20"
+                placeholder="e.g. 20% off first 3 months - code: TOOLBASE20"
                 className="w-full px-3 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary"
               />
             </div>

@@ -21,7 +21,7 @@ const tools = [
     is_sponsored: false,
     is_featured: true,
     pros: [
-      "Generous free tier — contacts, deals and pipelines included",
+      "Generous free tier - contacts, deals and pipelines included",
       "All-in-one CRM, marketing, sales and service platform",
       "Excellent integrations ecosystem (Gmail, Outlook, Zapier)",
       "AI email sequences and deal scoring on paid plans",
@@ -123,7 +123,7 @@ const tools = [
     slug: "fathom-ai",
     logo_letter: "F",
     logo_color: "#0EA5E9",
-    tagline: "AI meeting notetaker — records, transcribes and emails follow-ups automatically.",
+    tagline: "AI meeting notetaker - records, transcribes and emails follow-ups automatically.",
     description:
       "Fathom AI is a free AI meeting assistant that records, transcribes and summarises your Zoom, Google Meet and Teams calls. After each call it automatically emails action items and a summary to all attendees. A favourite among solo founders and small sales teams who want to focus on the conversation rather than taking notes.",
     category: "sales",
@@ -185,7 +185,7 @@ const tools = [
       "Strong team collaboration features",
     ],
     cons: [
-      "No free tier — 7-day trial only",
+      "No free tier - 7-day trial only",
       "More expensive than alternatives like Copy.ai",
       "Output still needs human editing for accuracy",
     ],
@@ -218,7 +218,7 @@ const tools = [
     is_sponsored: false,
     is_featured: false,
     pros: [
-      "Generous free tier — 2,000 words/month",
+      "Generous free tier - 2,000 words/month",
       "GTM workflow automation is unique to Copy.ai",
       "Wide range of content templates",
       "Simpler and more affordable than Jasper",
@@ -400,7 +400,7 @@ const tools = [
     slug: "dext",
     logo_letter: "D",
     logo_color: "#E84393",
-    tagline: "AI receipt and expense capture — photograph receipts, auto-categorise instantly.",
+    tagline: "AI receipt and expense capture - photograph receipts, auto-categorise instantly.",
     description:
       "Dext (formerly Receipt Bank) is an AI-powered expense and receipt management tool. Photograph a receipt on your phone and Dext's AI extracts the data, categorises the expense and pushes it directly to your accounting software (QuickBooks, Xero, Sage). It eliminates manual data entry and ensures every business expense is captured and categorised correctly.",
     category: "finance",
@@ -415,7 +415,7 @@ const tools = [
     is_sponsored: false,
     is_featured: false,
     pros: [
-      "Excellent OCR — accurately extracts receipt data",
+      "Excellent OCR - accurately extracts receipt data",
       "Auto-categorisation saves significant time",
       "Seamless sync with QuickBooks, Xero and Sage",
       "Mobile app makes capturing receipts on the go easy",
@@ -456,7 +456,7 @@ const tools = [
     is_sponsored: false,
     is_featured: true,
     pros: [
-      "Extremely flexible — adapts to any workflow",
+      "Extremely flexible - adapts to any workflow",
       "AI built directly into the writing experience",
       "Strong template library for quick setup",
       "Excellent for knowledge management and wikis",
@@ -495,7 +495,7 @@ const tools = [
     is_sponsored: false,
     is_featured: false,
     pros: [
-      "Excellent free tier — unlimited tasks and projects",
+      "Excellent free tier - unlimited tasks and projects",
       "AI integrated throughout task and document management",
       "Highly customisable views (list, board, Gantt, calendar)",
       "Strong automation builder",
@@ -534,7 +534,7 @@ const tools = [
     is_sponsored: false,
     is_featured: false,
     pros: [
-      "Automatic meeting join — no setup required per call",
+      "Automatic meeting join - no setup required per call",
       "Full-text search across all your meeting transcripts",
       "AI action item extraction is highly accurate",
       "Integrates with Slack, HubSpot, Salesforce and more",
@@ -576,7 +576,7 @@ const tools = [
       "AI automatically protects focus time on your calendar",
       "Smart 1-on-1 scheduling for regular check-ins",
       "Habit scheduling (exercise, learning) that auto-reschedules",
-      "Works with Google Calendar — easy setup",
+      "Works with Google Calendar - easy setup",
     ],
     cons: [
       "Currently Google Calendar only (no Outlook on free plan)",
@@ -616,7 +616,7 @@ const tools = [
     pros: [
       "Hire and pay in 150+ countries without legal entities",
       "Automated compliance with local labour laws",
-      "Fast contractor onboarding — minutes, not weeks",
+      "Fast contractor onboarding - minutes, not weeks",
       "Multiple payment options including crypto and Deel card",
     ],
     cons: [
@@ -655,7 +655,7 @@ const tools = [
     pros: [
       "Hire full-time employees in 180+ countries",
       "Strong focus on competitive local benefits",
-      "Transparent pricing — no hidden fees",
+      "Transparent pricing - no hidden fees",
       "Excellent employee self-service portal",
     ],
     cons: [
@@ -677,7 +677,7 @@ const tools = [
     slug: "bamboohr",
     logo_letter: "B",
     logo_color: "#73AC39",
-    tagline: "HR software for small businesses — onboarding, PTO and performance tracking.",
+    tagline: "HR software for small businesses - onboarding, PTO and performance tracking.",
     description:
       "BambooHR is purpose-built HR software for small and medium-sized businesses. It centralises employee records, automates onboarding, manages PTO and time-off requests, and enables performance reviews and satisfaction surveys. Loved by growing businesses that are outgrowing spreadsheets but don't need enterprise HR complexity.",
     category: "hr",
@@ -733,7 +733,7 @@ const tools = [
     is_sponsored: false,
     is_featured: false,
     pros: [
-      "Generous free tier — 50 conversations/month",
+      "Generous free tier - 50 conversations/month",
       "Lyro AI chatbot resolves up to 70% of queries",
       "5-minute installation on any website",
       "Strong Shopify and WordPress integrations",
@@ -852,7 +852,7 @@ const tools = [
     is_sponsored: false,
     is_featured: true,
     pros: [
-      "6,000+ app integrations — most in the market",
+      "6,000+ app integrations - most in the market",
       "Generous free tier with 100 tasks/month",
       "AI-powered natural language Zap builder",
       "Extensive template library for common automations",
@@ -878,7 +878,7 @@ const tools = [
     logo_color: "#6366F1",
     tagline: "Visual workflow builder with advanced logic for small teams.",
     description:
-      "Make (formerly Integromat) is a powerful visual automation platform that lets you design, build and automate complex workflows with a drag-and-drop interface. Unlike Zapier, Make uses a visual scenario builder and offers more advanced logic — iterators, aggregators, conditional routing — at a significantly lower price point. Popular with technical founders and operations teams.",
+      "Make (formerly Integromat) is a powerful visual automation platform that lets you design, build and automate complex workflows with a drag-and-drop interface. Unlike Zapier, Make uses a visual scenario builder and offers more advanced logic - iterators, aggregators, conditional routing - at a significantly lower price point. Popular with technical founders and operations teams.",
     category: "automation",
     pricing_type: "freemium",
     has_free_tier: true,
@@ -917,7 +917,7 @@ const tools = [
     logo_color: "#6366F1",
     tagline: "Affordable automation with one-time pricing. Great for budget-conscious SMBs.",
     description:
-      "Pabbly Connect is a workflow automation platform that stands out with its unique one-time pricing model — pay once, use forever, with no task or operation limits. It connects 1,000+ apps and supports multi-step workflows, filters, formatters and routers. A popular choice for budget-conscious small businesses who find Zapier's per-task pricing too expensive.",
+      "Pabbly Connect is a workflow automation platform that stands out with its unique one-time pricing model - pay once, use forever, with no task or operation limits. It connects 1,000+ apps and supports multi-step workflows, filters, formatters and routers. A popular choice for budget-conscious small businesses who find Zapier's per-task pricing too expensive.",
     category: "automation",
     pricing_type: "paid",
     has_free_tier: false,
@@ -930,7 +930,7 @@ const tools = [
     is_sponsored: false,
     is_featured: false,
     pros: [
-      "One-time payment option — no recurring subscription",
+      "One-time payment option - no recurring subscription",
       "Unlimited workflows and operations on paid plans",
       "1,000+ integrations including all major apps",
       "No task limits even on affordable plans",
@@ -1077,7 +1077,7 @@ const tools = [
     logo_color: "#5850EC",
     tagline: "Privacy-first website analytics. Lightweight and GDPR-compliant.",
     description:
-      "Plausible is a lightweight, privacy-first website analytics tool that gives you clear traffic insights without cookies, consent banners or tracking of personal data. GDPR, CCPA and PECR compliant out of the box. Its clean dashboard shows visitors, page views, bounce rates, top sources and conversions in one simple view — no data science degree required.",
+      "Plausible is a lightweight, privacy-first website analytics tool that gives you clear traffic insights without cookies, consent banners or tracking of personal data. GDPR, CCPA and PECR compliant out of the box. Its clean dashboard shows visitors, page views, bounce rates, top sources and conversions in one simple view - no data science degree required.",
     category: "analytics",
     pricing_type: "paid",
     has_free_tier: false,
@@ -1090,14 +1090,14 @@ const tools = [
     is_sponsored: false,
     is_featured: false,
     pros: [
-      "No cookies — no consent banner needed",
+      "No cookies - no consent banner needed",
       "GDPR/CCPA compliant out of the box",
       "Ultra-fast, lightweight script (< 1KB)",
       "Beautiful, simple dashboard anyone can read",
     ],
     cons: [
       "Less data depth than Google Analytics",
-      "No free tier — from $9/mo",
+      "No free tier - from $9/mo",
       "Funnel analysis and user journeys limited",
     ],
     pricing_summary: "From $9/mo (up to 10k pageviews). Open-source self-hosted option available.",
@@ -1129,7 +1129,7 @@ const tools = [
     is_sponsored: false,
     is_featured: false,
     pros: [
-      "Completely free — no paid tiers",
+      "Completely free - no paid tiers",
       "Connects to all Google products seamlessly",
       "Real-time dashboards and easy sharing",
       "Large library of community templates",
@@ -1168,7 +1168,7 @@ const tools = [
     is_sponsored: false,
     is_featured: false,
     pros: [
-      "Generous free tier — 20M events/month",
+      "Generous free tier - 20M events/month",
       "Powerful funnel and retention analysis",
       "Real-time event tracking",
       "Strong cohort analysis and user segmentation",
@@ -1194,7 +1194,7 @@ const tools = [
     slug: "seedlegals",
     logo_letter: "S",
     logo_color: "#1A73E8",
-    tagline: "AI-powered startup legal — funding rounds, employment contracts, option schemes.",
+    tagline: "AI-powered startup legal - funding rounds, employment contracts, option schemes.",
     description:
       "SeedLegals is an AI-powered legal platform built specifically for startups. It automates funding rounds, SAFE agreements, EMI option schemes, employment contracts and shareholder agreements at a fraction of traditional legal costs. Used by thousands of UK and US startups to close funding rounds and manage their legal stack without expensive law firm retainers.",
     category: "legal",
@@ -1251,7 +1251,7 @@ const tools = [
       "Legally binding in 188 countries",
       "Audit trail and tamper-evident documents",
       "Integrates with Salesforce, HubSpot, Google Drive",
-      "Mobile-friendly — sign anywhere on any device",
+      "Mobile-friendly - sign anywhere on any device",
     ],
     cons: [
       "More expensive than newer alternatives like PandaDoc",
@@ -1274,7 +1274,7 @@ const tools = [
     logo_color: "#003087",
     tagline: "AI-assisted legal document creation and business formation.",
     description:
-      "LegalZoom is one of the most widely used online legal platforms for small businesses. It offers AI-assisted document creation for LLCs, corporations, trademarks, wills and contracts, plus ongoing legal plans with attorney access. Particularly popular for business formation — affordable, fast and recognised across all 50 US states.",
+      "LegalZoom is one of the most widely used online legal platforms for small businesses. It offers AI-assisted document creation for LLCs, corporations, trademarks, wills and contracts, plus ongoing legal plans with attorney access. Particularly popular for business formation - affordable, fast and recognised across all 50 US states.",
     category: "legal",
     pricing_type: "paid",
     has_free_tier: false,
@@ -1330,12 +1330,12 @@ const tools = [
     pros: [
       "Real-time Google search integration for factual content",
       "Built-in Botsonic chatbot builder included",
-      "Generous free tier — 25 credits/month",
+      "Generous free tier - 25 credits/month",
       "Article writer produces well-structured long-form content",
     ],
     cons: [
       "Credit system can be confusing",
-      "Output quality varies — longer content needs editing",
+      "Output quality varies - longer content needs editing",
       "Botsonic requires separate configuration and setup",
     ],
     pricing_summary: "Free (25 credits). Individual $20/mo. Teams $19/user/mo.",
@@ -1367,7 +1367,7 @@ const tools = [
     is_sponsored: false,
     is_featured: false,
     pros: [
-      "Works everywhere — Gmail, Slack, Google Docs, Word",
+      "Works everywhere - Gmail, Slack, Google Docs, Word",
       "Brand tone guidelines enforce consistent voice",
       "Team analytics show writing improvement over time",
       "Plagiarism detection included",
@@ -1434,7 +1434,7 @@ const tools = [
     logo_color: "#3ECF8E",
     tagline: "Open-source database and backend platform. Build and scale without a backend team.",
     description:
-      "Supabase is an open-source Firebase alternative that gives small businesses a full backend in minutes — Postgres database, authentication, file storage, edge functions and real-time subscriptions. The generous free tier and simple dashboard make it accessible to non-engineers. Used by solo founders and startups to build and scale products without hiring a backend developer.",
+      "Supabase is an open-source Firebase alternative that gives small businesses a full backend in minutes - Postgres database, authentication, file storage, edge functions and real-time subscriptions. The generous free tier and simple dashboard make it accessible to non-engineers. Used by solo founders and startups to build and scale products without hiring a backend developer.",
     category: "it-tech",
     pricing_type: "freemium",
     has_free_tier: true,
@@ -1449,7 +1449,7 @@ const tools = [
     pros: [
       "Full Postgres database with real-time subscriptions",
       "Built-in auth, storage and edge functions",
-      "Open-source — self-host or use managed cloud",
+      "Open-source - self-host or use managed cloud",
       "Generous free tier covers most small projects",
     ],
     cons: [
@@ -1473,7 +1473,7 @@ const tools = [
     logo_color: "#000000",
     tagline: "Deploy and host websites and web apps instantly. No DevOps needed.",
     description:
-      "Vercel is the leading platform for deploying modern web applications. Connect your GitHub repository and Vercel automatically builds and deploys your site on every push — with global CDN, preview deployments, custom domains and analytics built in. The go-to platform for small teams that want professional-grade hosting without managing servers.",
+      "Vercel is the leading platform for deploying modern web applications. Connect your GitHub repository and Vercel automatically builds and deploys your site on every push - with global CDN, preview deployments, custom domains and analytics built in. The go-to platform for small teams that want professional-grade hosting without managing servers.",
     category: "it-tech",
     pricing_type: "freemium",
     has_free_tier: true,
@@ -1488,7 +1488,7 @@ const tools = [
     pros: [
       "Zero-config deployments from GitHub in seconds",
       "Automatic preview URLs for every pull request",
-      "Global edge CDN — fast everywhere",
+      "Global edge CDN - fast everywhere",
       "Generous free tier for personal and small projects",
     ],
     cons: [
@@ -1525,7 +1525,7 @@ const tools = [
     is_sponsored: false,
     is_featured: false,
     pros: [
-      "Industry standard — every developer knows it",
+      "Industry standard - every developer knows it",
       "Free unlimited public and private repositories",
       "GitHub Actions automates CI/CD workflows",
       "Integrates with every modern development tool",
@@ -1590,7 +1590,7 @@ const tools = [
     logo_color: "#0A2540",
     tagline: "No-code app builder. Build full web apps without writing any code.",
     description:
-      "Bubble is the leading no-code platform for building fully functional web applications. Its visual drag-and-drop editor lets you design UI, define logic, connect APIs and manage a database — all without code. Used by thousands of founders to build marketplaces, SaaS products, internal tools and MVPs without hiring a developer.",
+      "Bubble is the leading no-code platform for building fully functional web applications. Its visual drag-and-drop editor lets you design UI, define logic, connect APIs and manage a database - all without code. Used by thousands of founders to build marketplaces, SaaS products, internal tools and MVPs without hiring a developer.",
     category: "it-tech",
     pricing_type: "freemium",
     has_free_tier: true,
@@ -1603,7 +1603,7 @@ const tools = [
     is_sponsored: false,
     is_featured: false,
     pros: [
-      "Build real web apps with databases and user auth — no code",
+      "Build real web apps with databases and user auth - no code",
       "Large plugin ecosystem for payments, maps and more",
       "Active community and template marketplace",
       "Scales from MVP to production app",
@@ -1668,7 +1668,7 @@ const tools = [
     logo_color: "#F26207",
     tagline: "Browser-based coding environment. Write, run and deploy code without installing anything.",
     description:
-      "Replit is a browser-based IDE and deployment platform that lets you write, run and host code entirely in the cloud. No local setup required — open a browser and start coding. Supports 50+ languages, has built-in AI coding assistance, and lets you deploy web apps directly from the editor. Popular with solo founders and startups who want to experiment and ship fast.",
+      "Replit is a browser-based IDE and deployment platform that lets you write, run and host code entirely in the cloud. No local setup required - open a browser and start coding. Supports 50+ languages, has built-in AI coding assistance, and lets you deploy web apps directly from the editor. Popular with solo founders and startups who want to experiment and ship fast.",
     category: "it-tech",
     pricing_type: "freemium",
     has_free_tier: true,
@@ -1681,7 +1681,7 @@ const tools = [
     is_sponsored: false,
     is_featured: false,
     pros: [
-      "Zero setup — code in any browser instantly",
+      "Zero setup - code in any browser instantly",
       "Supports 50+ programming languages",
       "Built-in AI coding assistant",
       "Deploy and share apps with a single click",
@@ -1705,7 +1705,7 @@ const tools = [
     slug: "lovable",
     logo_letter: "L",
     logo_color: "#FF4D6D",
-    tagline: "AI app builder — describe what you want and it builds the frontend for you.",
+    tagline: "AI app builder - describe what you want and it builds the frontend for you.",
     description:
       "Lovable is an AI-powered app builder that turns plain English descriptions into working web app frontends. Describe the UI you want, and Lovable generates clean React code, complete with components, styling and basic logic. It integrates with Supabase for the backend and GitHub for version control. Designed for non-technical founders who want to build real products without hiring developers.",
     category: "it-tech",
@@ -1728,7 +1728,7 @@ const tools = [
     cons: [
       "Complex logic still requires developer input",
       "Output quality varies with prompt specificity",
-      "Relatively new — ecosystem still maturing",
+      "Relatively new - ecosystem still maturing",
     ],
     pricing_summary: "Starter $20/mo. Launch $50/mo. Scale $100/mo.",
     use_cases: [
@@ -1746,7 +1746,7 @@ const tools = [
     logo_color: "#6C47FF",
     tagline: "AI no-code app builder. Build internal tools and web apps in plain English.",
     description:
-      "Base44 is an AI-powered no-code app builder that lets you build internal tools, client portals and web apps by describing them in plain English. Unlike traditional no-code tools, Base44 uses AI to generate the entire app structure, data model and UI from your description — making it accessible to non-technical founders and operations teams.",
+      "Base44 is an AI-powered no-code app builder that lets you build internal tools, client portals and web apps by describing them in plain English. Unlike traditional no-code tools, Base44 uses AI to generate the entire app structure, data model and UI from your description - making it accessible to non-technical founders and operations teams.",
     category: "it-tech",
     pricing_type: "freemium",
     has_free_tier: true,
@@ -1767,7 +1767,7 @@ const tools = [
     cons: [
       "Limited customisation compared to code-based tools",
       "Best for simpler internal tools",
-      "Relatively new platform — still evolving",
+      "Relatively new platform - still evolving",
     ],
     pricing_summary: "Free tier available. Paid plans from $29/mo.",
     use_cases: [
@@ -1785,7 +1785,7 @@ const tools = [
     logo_color: "#6B6B6B",
     tagline: "AI code editor that writes, explains and debugs code alongside you.",
     description:
-      "Cursor is an AI-native code editor built on VS Code that deeply integrates AI assistance into the coding workflow. It can write new code from natural language descriptions, explain complex code, suggest fixes and refactor entire files — all within the editor. A significant productivity multiplier for solo founders and small technical teams who want to ship faster.",
+      "Cursor is an AI-native code editor built on VS Code that deeply integrates AI assistance into the coding workflow. It can write new code from natural language descriptions, explain complex code, suggest fixes and refactor entire files - all within the editor. A significant productivity multiplier for solo founders and small technical teams who want to ship faster.",
     category: "it-tech",
     pricing_type: "freemium",
     has_free_tier: true,
@@ -1800,7 +1800,7 @@ const tools = [
     pros: [
       "AI that understands your entire codebase",
       "Write code from natural language instructions",
-      "Built on VS Code — familiar to most developers",
+      "Built on VS Code - familiar to most developers",
       "Significantly speeds up development for small teams",
     ],
     cons: [
@@ -1839,7 +1839,7 @@ const tools = [
     pros: [
       "Deploy any app from GitHub in minutes",
       "Managed Postgres, MySQL and Redis included",
-      "Usage-based pricing — only pay for what you use",
+      "Usage-based pricing - only pay for what you use",
       "Much simpler than AWS for small teams",
     ],
     cons: [
@@ -1863,7 +1863,7 @@ const tools = [
     logo_color: "#FCB400",
     tagline: "No-code database and app builder. Manage data and workflows without a developer.",
     description:
-      "Airtable is a no-code platform that combines the simplicity of a spreadsheet with the power of a relational database. Teams use it to manage content calendars, CRMs, project trackers, inventory systems and custom workflows — all with a drag-and-drop interface. Its automation builder, views (grid, kanban, calendar, gallery) and app builder make it a versatile operations hub.",
+      "Airtable is a no-code platform that combines the simplicity of a spreadsheet with the power of a relational database. Teams use it to manage content calendars, CRMs, project trackers, inventory systems and custom workflows - all with a drag-and-drop interface. Its automation builder, views (grid, kanban, calendar, gallery) and app builder make it a versatile operations hub.",
     category: "it-tech",
     pricing_type: "freemium",
     has_free_tier: true,
@@ -1877,7 +1877,7 @@ const tools = [
     is_featured: false,
     pros: [
       "Familiar spreadsheet interface with relational database power",
-      "Multiple views — grid, kanban, calendar, gallery, Gantt",
+      "Multiple views - grid, kanban, calendar, gallery, Gantt",
       "Built-in automations and form builder",
       "Generous free tier for small teams",
     ],
@@ -1915,7 +1915,7 @@ const tools = [
     is_sponsored: false,
     is_featured: false,
     pros: [
-      "Full visual design control — no code required",
+      "Full visual design control - no code required",
       "Clean, production-quality HTML/CSS output",
       "Powerful CMS for dynamic content",
       "Built-in hosting, CDN and SSL",
@@ -1954,7 +1954,7 @@ const tools = [
     is_sponsored: false,
     is_featured: false,
     pros: [
-      "Fully self-hostable — no per-task pricing",
+      "Fully self-hostable - no per-task pricing",
       "400+ integrations and growing",
       "Custom JavaScript logic for complex workflows",
       "Open-source with active community",

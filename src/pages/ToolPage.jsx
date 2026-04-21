@@ -27,7 +27,7 @@ export default function ToolPage() {
           .order("created_at", { ascending: false });
         if (!error && data) setReviews(data);
       } catch {
-        // Supabase not configured — reviews unavailable
+        // Supabase not configured - reviews unavailable
       } finally {
         setLoadingReviews(false);
       }
@@ -60,9 +60,9 @@ export default function ToolPage() {
   return (
     <>
       <Helmet>
-        <title>{tool.name} Review — {brand.name}</title>
+        <title>{tool.name} Review - {brand.name}</title>
         <meta name="description" content={`${tool.name}: ${tool.tagline} Read reviews, pricing and features. Best for small businesses.`} />
-        <meta property="og:title" content={`${tool.name} — ${brand.name}`} />
+        <meta property="og:title" content={`${tool.name} - ${brand.name}`} />
         <meta property="og:description" content={tool.tagline} />
         <meta property="og:type" content="product" />
         <link rel="canonical" href={`${brand.url}/tools/${tool.slug}`} />

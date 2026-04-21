@@ -34,7 +34,7 @@ export default function ReviewForm({ toolId, toolName }) {
     return (
       <div className="bg-green-50 border border-green-200 rounded-xl p-6 text-center">
         <div className="text-3xl mb-2">✅</div>
-        <p className="font-semibold text-green-800">Thanks — your review is pending approval.</p>
+        <p className="font-semibold text-green-800">Thanks - your review is pending approval.</p>
         <p className="text-green-700 text-sm mt-1">
           We review all submissions to ensure quality. Your review will appear shortly.
         </p>

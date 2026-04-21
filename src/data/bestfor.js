@@ -4,7 +4,7 @@ const bestForPages = [
     label: "Freelancers",
     headline: "Best tools for freelancers",
     intro:
-      "Freelancers need tools that are affordable, easy to set up and cover multiple business functions without a team to support them. The best AI tools for freelancers automate invoicing, help with writing and content creation, manage client communication and keep the books in order — so you can focus on the work that actually earns you money.",
+      "Freelancers need tools that are affordable, easy to set up and cover multiple business functions without a team to support them. The best AI tools for freelancers automate invoicing, help with writing and content creation, manage client communication and keep the books in order - so you can focus on the work that actually earns you money.",
     tag: "solo",
     callouts: [
       {
@@ -17,7 +17,7 @@ const bestForPages = [
       },
       {
         tool_slug: "fathom-ai",
-        benefit: "Record and transcribe every client call automatically — free forever.",
+        benefit: "Record and transcribe every client call automatically - free forever.",
       },
       {
         tool_slug: "canva-ai",
@@ -38,16 +38,16 @@ const bestForPages = [
     label: "Startups",
     headline: "Best tools for startups",
     intro:
-      "Early-stage startups need to move fast, stay lean and operate like a team of 20 with a team of 3. The best AI tools for startups replace entire departments — automating marketing, customer support, HR, finance and legal so founders can focus on product and growth. These are the tools chosen by thousands of funded and bootstrapped startups worldwide.",
+      "Early-stage startups need to move fast, stay lean and operate like a team of 20 with a team of 3. The best AI tools for startups replace entire departments - automating marketing, customer support, HR, finance and legal so founders can focus on product and growth. These are the tools chosen by thousands of funded and bootstrapped startups worldwide.",
     tag: "startup",
     callouts: [
       {
         tool_slug: "hubspot-crm",
-        benefit: "Free CRM with AI sequences — manage your first 100 customers without paying a penny.",
+        benefit: "Free CRM with AI sequences - manage your first 100 customers without paying a penny.",
       },
       {
         tool_slug: "notion-ai",
-        benefit: "Company wiki, project management and knowledge base all in one — scales with your team.",
+        benefit: "Company wiki, project management and knowledge base all in one - scales with your team.",
       },
       {
         tool_slug: "deel",
@@ -63,7 +63,7 @@ const bestForPages = [
       },
       {
         tool_slug: "zapier",
-        benefit: "Connect your entire app stack and automate repetitive tasks — no developer needed.",
+        benefit: "Connect your entire app stack and automate repetitive tasks - no developer needed.",
       },
     ],
   },
@@ -77,7 +77,7 @@ const bestForPages = [
     callouts: [
       {
         tool_slug: "tidio",
-        benefit: "Handle 70% of customer queries automatically with Lyro AI chatbot — 24/7, no staff required.",
+        benefit: "Handle 70% of customer queries automatically with Lyro AI chatbot - 24/7, no staff required.",
       },
       {
         tool_slug: "canva-ai",
@@ -97,7 +97,7 @@ const bestForPages = [
       },
       {
         tool_slug: "plausible",
-        benefit: "Understand which traffic sources and pages drive your best conversions — GDPR-friendly.",
+        benefit: "Understand which traffic sources and pages drive your best conversions - GDPR-friendly.",
       },
     ],
   },
@@ -106,7 +106,7 @@ const bestForPages = [
     label: "Consultants",
     headline: "Best tools for consultants",
     intro:
-      "Consultants need to look professional, deliver high-quality work and run the business side without a back-office team. The best AI tools for consultants handle proposals, deliverables, client communication, invoicing and business development — letting you focus on strategy and client relationships rather than admin.",
+      "Consultants need to look professional, deliver high-quality work and run the business side without a back-office team. The best AI tools for consultants handle proposals, deliverables, client communication, invoicing and business development - letting you focus on strategy and client relationships rather than admin.",
     tag: "solo",
     callouts: [
       {
@@ -119,7 +119,7 @@ const bestForPages = [
       },
       {
         tool_slug: "fathom-ai",
-        benefit: "Record and summarise every client meeting automatically — never miss an action item.",
+        benefit: "Record and summarise every client meeting automatically - never miss an action item.",
       },
       {
         tool_slug: "freshbooks",

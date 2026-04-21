@@ -118,7 +118,7 @@ export default function ComparisonPage() {
             const g2Url = g2Urls[tool.slug];
             return (
               <div key={tool.slug} className="bg-white border border-gray-100 rounded-xl p-5 shadow-card">
-                <h3 className="font-semibold text-dark mb-2">{tool.name} — User Reviews</h3>
+                <h3 className="font-semibold text-dark mb-2">{tool.name} - User Reviews</h3>
                 <p className="text-xs text-gray-400 mb-3">Read verified reviews from real users on G2.</p>
                 {g2Url && (
                   <a
