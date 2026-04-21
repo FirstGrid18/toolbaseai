@@ -260,9 +260,9 @@ export default function Home() {
 
         {/* List Your Tool CTA banner */}
         <section className="mt-12 bg-dark rounded-2xl px-8 py-10 text-center text-white">
-          <h2 className="text-2xl font-bold mb-2">Got an AI tool for SMBs?</h2>
+          <h2 className="text-2xl font-bold mb-2">Got a tool for small businesses?</h2>
           <p className="text-gray-300 mb-6 max-w-md mx-auto">
-            Get your tool listed on {brand.name} and reach thousands of small business owners looking for exactly what you built.
+            List your tool on Toolbase Marketplace and reach business owners looking for practical software that helps them work better.
           </p>
           <Link
             to="/submit"
