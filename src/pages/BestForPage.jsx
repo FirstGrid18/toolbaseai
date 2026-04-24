@@ -38,7 +38,7 @@ export default function BestForPage() {
   return (
     <>
       <Helmet>
-        <title>{page.headline} | {brand.name}</title>
+        <title>{`${page.headline} | ${brand.name}`}</title>
         <meta name="description" content={`${page.intro.slice(0, 155)}...`} />
         <meta property="og:title" content={page.headline} />
         <meta property="og:description" content={page.intro.slice(0, 160)} />

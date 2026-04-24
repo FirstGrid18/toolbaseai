@@ -38,7 +38,7 @@ export default function CategoryPage() {
   return (
     <>
       <Helmet>
-        <title>Best AI {category.label} Tools for Small Businesses | {brand.name}</title>
+        <title>{`Best AI ${category.label} Tools for Small Businesses | ${brand.name}`}</title>
         <meta name="description" content={`Compare the top AI ${category.label.toLowerCase()} tools for SMBs. ${category.description.slice(0, 120)}...`} />
         <meta property="og:title" content={`Best AI ${category.label} Tools for Small Businesses | ${brand.name}`} />
         <meta property="og:description" content={category.description.slice(0, 160)} />

@@ -6,7 +6,7 @@ export default function NotFound() {
   return (
     <>
       <Helmet>
-        <title>Page Not Found | {brand.name}</title>
+        <title>{`Page Not Found | ${brand.name}`}</title>
         <meta name="robots" content="noindex" />
       </Helmet>
       <main className="max-w-lg mx-auto px-4 py-24 text-center">

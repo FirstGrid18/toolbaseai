@@ -60,7 +60,7 @@ export default function SubmitTool() {
     return (
       <>
         <Helmet>
-          <title>Tool Submitted | {brand.name}</title>
+          <title>{`Tool Submitted | ${brand.name}`}</title>
         </Helmet>
         <main className="max-w-xl mx-auto px-4 py-20 text-center">
           <div className="text-5xl mb-4">🎉</div>
@@ -79,7 +79,7 @@ export default function SubmitTool() {
   return (
     <>
       <Helmet>
-        <title>List Your Tool | {brand.name}</title>
+        <title>{`List Your Tool | ${brand.name}`}</title>
         <meta name="description" content={`Submit your tool to ${brand.name} and reach thousands of small business owners looking for tools like yours.`} />
         <meta property="og:title" content={`List Your Tool | ${brand.name}`} />
         <meta property="og:type" content="website" />

@@ -97,7 +97,7 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>{brand.name} - {brand.tagline}</title>
+        <title>{`${brand.name} - ${brand.tagline}`}</title>
         <meta name="description" content={`Discover and compare the best AI tools for small businesses. ${brand.tagline}. Honest reviews, discounts and expert picks.`} />
         <meta property="og:title" content={`${brand.name} - ${brand.tagline}`} />
         <meta property="og:description" content="Discover and compare the best AI tools for small businesses. Honest reviews, discounts and expert picks." />

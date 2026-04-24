@@ -51,7 +51,7 @@ export default function ComparisonPage() {
   return (
     <>
       <Helmet>
-        <title>{title} | {brand.name}</title>
+        <title>{`${title} | ${brand.name}`}</title>
         <meta
           name="description"
           content={`Compare ${title} - pricing, features, ratings and reviews to find the best tool for your small business.`}

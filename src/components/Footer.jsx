@@ -83,6 +83,11 @@ export default function Footer() {
                   List Your Tool
                 </Link>
               </li>
+              <li>
+                <Link to="/contact" className="text-sm hover:text-white transition-colors">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

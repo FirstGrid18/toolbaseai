@@ -60,7 +60,7 @@ export default function ToolPage() {
   return (
     <>
       <Helmet>
-        <title>{tool.name} Review - {brand.name}</title>
+        <title>{`${tool.name} Review - ${brand.name}`}</title>
         <meta name="description" content={`${tool.name}: ${tool.tagline} Read reviews, pricing and features. Best for small businesses.`} />
         <meta property="og:title" content={`${tool.name} - ${brand.name}`} />
         <meta property="og:description" content={tool.tagline} />
