@@ -34,7 +34,7 @@ export default function SubmitTool() {
     setStatus("submitting");
 
     try {
-      const { error } = await supabase.from("submissions").insert({
+      const { error } = await supabase.from("tool_submissions").insert({
         company_name: form.company_name.trim(),
         tool_name: form.tool_name.trim(),
         website_url: form.website_url.trim(),
@@ -64,11 +64,7 @@ export default function SubmitTool() {
         </Helmet>
         <main className="max-w-xl mx-auto px-4 py-20 text-center">
           <div className="text-5xl mb-4">🎉</div>
-          <h1 className="text-2xl font-bold text-dark mb-2">Submission received!</h1>
-          <p className="text-gray-500 mb-6">
-            Thanks for submitting your tool. Our team will review it and get back to you at{" "}
-            <strong>{form.contact_email}</strong> within 3–5 business days.
-          </p>
+          <h1 className="text-2xl font-bold text-dark mb-2">Thanks! We'll review your submission within 3–5 business days.</h1>
           <button
             onClick={() => { setForm(initialForm); setStatus("idle"); }}
             className="text-sm text-primary font-semibold hover:underline"
@@ -83,16 +79,16 @@ export default function SubmitTool() {
   return (
     <>
       <Helmet>
-        <title>List Your AI Tool | {brand.name}</title>
-        <meta name="description" content={`Submit your AI tool to ${brand.name} and reach thousands of small business owners looking for tools like yours.`} />
-        <meta property="og:title" content={`List Your AI Tool | ${brand.name}`} />
+        <title>List Your Tool | {brand.name}</title>
+        <meta name="description" content={`Submit your tool to ${brand.name} and reach thousands of small business owners looking for tools like yours.`} />
+        <meta property="og:title" content={`List Your Tool | ${brand.name}`} />
         <meta property="og:type" content="website" />
         <link rel="canonical" href={`${brand.url}/submit`} />
       </Helmet>
 
       <main className="max-w-2xl mx-auto px-4 sm:px-6 py-10">
         <header className="mb-8">
-          <h1 className="text-3xl font-bold text-dark mb-2">List Your AI Tool</h1>
+          <h1 className="text-3xl font-bold text-dark mb-2">List Your Tool</h1>
           <p className="text-gray-500 leading-relaxed">
             Reach thousands of small business owners actively looking for AI tools. Submit your listing
             and our team will review it within 3–5 business days.
@@ -207,7 +203,7 @@ export default function SubmitTool() {
                 type="url"
                 value={form.affiliate_url}
                 onChange={handleChange}
-                placeholder="https://yourtool.com?ref=toolbaseai"
+                placeholder="https://yourtool.com?ref=toolbase"
                 className="w-full px-3 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary"
               />
               <p className="text-xs text-gray-400 mt-1">If you have an affiliate programme, share your unique link here.</p>
@@ -293,8 +289,7 @@ export default function SubmitTool() {
 
           {status === "error" && (
             <p className="text-red-500 text-sm bg-red-50 border border-red-100 px-4 py-3 rounded-lg">
-              Something went wrong submitting your tool. Please try again or email us directly at{" "}
-              <a href={`mailto:${brand.contactEmail}`} className="underline">{brand.contactEmail}</a>.
+              Something went wrong. Please try again.
             </p>
           )}
 

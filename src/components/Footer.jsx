@@ -19,9 +19,9 @@ export default function Footer() {
             </Link>
             <p className="text-sm leading-relaxed">{brand.tagline}</p>
             <p className="text-sm mt-3">
-              <a href={`mailto:${brand.contactEmail}`} className="hover:text-white transition-colors">
-                {brand.contactEmail}
-              </a>
+              <Link to="/contact" className="hover:text-white transition-colors">
+                Get in touch
+              </Link>
             </p>
           </div>
 

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import ToolCard from "../components/ToolCard";
-import AdSlot from "../components/AdSlot";
 import NewsletterStrip from "../components/NewsletterStrip";
 import brand from "../config/brand";
 import categories from "../config/categories";
@@ -233,9 +232,6 @@ export default function Home() {
               ))}
             </div>
 
-            {/* Ad slot after row 2 */}
-            <AdSlot slot="homepage-mid" position="homepage-mid" />
-
             {/* Newsletter */}
             <NewsletterStrip />
 
@@ -248,8 +244,7 @@ export default function Home() {
               </div>
             )}
 
-            {/* Bottom ad */}
-            <AdSlot slot="homepage-bottom" position="homepage-bottom" />
+
           </>
         )}
 

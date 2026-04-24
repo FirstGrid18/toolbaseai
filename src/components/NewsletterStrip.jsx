@@ -1,18 +1,28 @@
 import { useState } from "react";
-import brand from "../config/brand";
 
-// Replace the inner form with your Beehiiv embed URL on production.
-// Example: <iframe src={import.meta.env.VITE_BEEHIIV_URL} ... />
-// See: https://www.beehiiv.com/support/article/embed-forms
+const SUBSCRIBE_URL =
+  "https://bxrwkdlwplziqcaoyknk.supabase.co/functions/v1/newsletter-subscribe";
 
 export default function NewsletterStrip() {
   const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState("idle"); // idle | submitting | success | error
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    // TODO: Replace with Beehiiv embed or API call
-    if (email) setSubmitted(true);
+    setStatus("submitting");
+
+    try {
+      const res = await fetch(SUBSCRIBE_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email.trim().toLowerCase() }),
+      });
+
+      if (!res.ok) throw new Error("subscribe failed");
+      setStatus("success");
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -26,33 +36,33 @@ export default function NewsletterStrip() {
           Join small business owners using Toolbase Marketplace to find the right tools without wasting hours researching.
         </p>
 
-        {submitted ? (
-          <p className="text-primary font-semibold">
-            You're in! Check your inbox to confirm your subscription.
-          </p>
+        {status === "success" ? (
+          <p className="text-primary font-semibold">You're in! Check your inbox.</p>
         ) : (
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 justify-center">
-            <input
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="your@email.com"
-              className="flex-1 max-w-xs px-4 py-2.5 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary text-sm"
-            />
-            <button
-              type="submit"
-              className="px-5 py-2.5 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors text-sm whitespace-nowrap"
-            >
-              Subscribe Free
-            </button>
-          </form>
+          <>
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 justify-center">
+              <input
+                type="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="your@email.com"
+                className="flex-1 max-w-xs px-4 py-2.5 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary text-sm"
+              />
+              <button
+                type="submit"
+                disabled={status === "submitting"}
+                className="px-5 py-2.5 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors text-sm whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {status === "submitting" ? "Subscribing..." : "Subscribe Free"}
+              </button>
+            </form>
+            {status === "error" && (
+              <p className="text-red-500 text-sm mt-3">Something went wrong. Try again.</p>
+            )}
+            <p className="text-xs text-gray-400 mt-3">Unsubscribe any time</p>
+          </>
         )}
-
-        <p className="text-xs text-gray-400 mt-3">
-          {/* Replace with Beehiiv embed URL on production */}
-          Powered by Beehiiv · Unsubscribe any time
-        </p>
       </div>
     </section>
   );
