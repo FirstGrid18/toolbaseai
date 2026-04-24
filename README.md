@@ -1,8 +1,8 @@
-# ToolBaseAI
+# ToolbaseMarketplace
 
-**The AI marketplace for small businesses.**
+**The tech marketplace for small businesses.**
 
-ToolBaseAI is a production-ready directory and comparison platform for AI tools, built exclusively for small and medium-sized businesses (SMBs).
+ToolbaseMarketplace is a production-ready directory and comparison platform for tech tools, built exclusively for small and medium-sized businesses (SMBs).
 
 ## Tech Stack
 
