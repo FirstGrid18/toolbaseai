@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import brand from "../config/brand";
 import categories from "../config/categories";
+import Logo from "./Logo";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -11,11 +12,8 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-3">
-              <div className="w-7 h-7 bg-primary rounded-md flex items-center justify-center">
-                <span className="text-white font-bold text-xs">T</span>
-              </div>
-              <span className="text-white font-bold">{brand.name}</span>
+            <Link to="/" className="inline-flex mb-3">
+              <Logo variant="light" />
             </Link>
             <p className="text-sm leading-relaxed">{brand.tagline}</p>
             <p className="text-sm mt-3">
