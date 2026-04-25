@@ -16,6 +16,7 @@ const comparisons = comparisonsModule?.default ?? [];
 
 const routes = [
   "/",
+  "/use-cases",
   "/submit",
   "/contact",
   "/404",
