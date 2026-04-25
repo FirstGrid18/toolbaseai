@@ -107,19 +107,19 @@ export default function Home() {
       </Helmet>
 
       {/* Hero */}
-      <section className="bg-white pt-14 pb-10 px-4 border-b border-gray-100">
+      <section className="bg-[#0D0618] pt-14 pb-10 px-4 border-b border-[rgba(255,255,255,0.06)]">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-bold text-dark leading-tight mb-4">
+          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-4">
             Find the right tools to run and grow your business
           </h1>
-          <p className="text-lg text-gray-500 mb-8 max-w-xl mx-auto">
+          <p className="text-lg text-[#7C6A99] mb-8 max-w-xl mx-auto">
             Simple business tools for getting customers, getting paid, saving time and staying organised.
           </p>
 
           {/* Search */}
           <div className="relative max-w-xl mx-auto">
             <svg
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#7C6A99]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -132,7 +132,7 @@ export default function Home() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search tools by name, category or need..."
-              className="w-full pl-11 pr-4 py-3.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-primary shadow-sm"
+              className="w-full pl-11 pr-4 py-3.5 bg-[#1a0d2e] border border-[#3b1f6e] rounded-xl text-sm text-white placeholder:text-[#7C6A99] focus:outline-none focus:ring-2 focus:ring-[#6D28D9]"
               aria-label="Search tools"
             />
           </div>
@@ -151,8 +151,8 @@ export default function Home() {
                 onClick={() => handleQuickFilter(filter)}
                 className={`flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium border transition-colors ${
                   isActive
-                    ? "bg-primary text-white border-primary"
-                    : "bg-white text-gray-700 border-gray-300 hover:border-primary hover:text-primary"
+                    ? "bg-[#4C1D95] text-white border-[#4C1D95]"
+                    : "bg-white text-[#4C1D95] border-[#e0d9f0] hover:border-[#4C1D95]"
                 }`}
               >
                 {filter.label}
@@ -167,10 +167,10 @@ export default function Home() {
           <div className="flex gap-2 overflow-x-auto pb-1 flex-1 min-w-0 scrollbar-hide">
             <button
               onClick={() => handleCategoryFilter("all")}
-              className={`flex-shrink-0 px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+              className={`flex-shrink-0 px-3 py-1.5 text-sm font-medium transition-colors border-b-2 ${
                 activeCategory === "all" && !activeQuickFilter
-                  ? "bg-primary text-white"
-                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  ? "text-[#4C1D95] border-[#4C1D95]"
+                  : "text-[#666] border-transparent hover:text-[#4C1D95]"
               }`}
             >
               All
@@ -179,10 +179,10 @@ export default function Home() {
               <button
                 key={cat.slug}
                 onClick={() => handleCategoryFilter(cat.slug)}
-                className={`flex-shrink-0 px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                className={`flex-shrink-0 px-3 py-1.5 text-sm font-medium transition-colors border-b-2 ${
                   activeCategory === cat.slug && !activeQuickFilter
-                    ? "bg-primary text-white"
-                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                    ? "text-[#4C1D95] border-[#4C1D95]"
+                    : "text-[#666] border-transparent hover:text-[#4C1D95]"
                 }`}
               >
                 {cat.label}

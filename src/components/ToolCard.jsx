@@ -10,8 +10,8 @@ export default function ToolCard({ tool }) {
   return (
     <Link
       to={`/tools/${tool.slug}`}
-      className={`group relative flex flex-col bg-white rounded-xl shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 overflow-hidden ${
-        tool.is_sponsored ? "border-2 border-gold/40" : "border border-gray-100"
+      className={`group relative flex flex-col bg-white rounded-[10px] shadow-card hover:shadow-card-hover transition-all duration-200 hover:-translate-y-1 overflow-hidden ${
+        tool.is_sponsored ? "border-2 border-gold/40" : "border border-[#f0ede8]"
       }`}
       aria-label={`View ${tool.name}`}
     >
@@ -53,7 +53,7 @@ export default function ToolCard({ tool }) {
         <p className="text-sm text-gray-600 mb-3 leading-relaxed flex-1">{tool.tagline}</p>
 
         {/* Footer row */}
-        <div className="flex items-center justify-between mt-auto pt-3 border-t border-gray-50">
+        <div className="flex items-center justify-between mt-auto pt-3 border-t border-[#f0ede8]">
           <div className="flex items-center gap-2">
             {tool.has_free_tier && (
               <span className="text-xs bg-green-50 text-green-700 border border-green-100 px-2 py-0.5 rounded-full font-medium">

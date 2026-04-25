@@ -12,7 +12,7 @@ import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#F9FAFB] flex flex-col font-sans">
+    <div className="min-h-screen bg-[#FAFAF8] flex flex-col font-sans">
       <Navbar />
       <div className="flex-1">
         <Routes>

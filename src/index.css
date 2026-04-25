@@ -22,3 +22,15 @@
     display: none;
   }
 }
+
+@keyframes logoSquarePop {
+  0%, 100% { transform: scale(1); }
+  40%       { transform: scale(1.35); }
+  60%       { transform: scale(1.35); }
+}
+
+.logo-square {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: logoSquarePop 2.4s ease-in-out infinite;
+}

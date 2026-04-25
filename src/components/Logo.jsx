@@ -1,8 +1,9 @@
 // Inline SVG logo — no image requests, scales cleanly at all sizes.
-// variant="light" flips "base" and "Marketplace" text for dark backgrounds.
-export default function Logo({ variant = "default" }) {
-  const baseColor = variant === "light" ? "#ffffff" : "#1a1a1a";
-  const subColor  = variant === "light" ? "#aaaaaa" : "#666666";
+// variant="light" is used by Footer (dark background context).
+export default function Logo({ variant = "default", animated = false }) {
+  // "base" is always white on dark backgrounds; "Marketplace" always deep purple
+  const baseColor      = "#ffffff";
+  const marketplaceColor = "#6D28D9";
 
   // 3×3 grid: 9px squares, 2px gaps → total icon size 31×31px
   const sq  = 9;
@@ -31,18 +32,23 @@ export default function Logo({ variant = "default" }) {
         aria-hidden="true"
       >
         {opacities.map((row, r) =>
-          row.map((opacity, c) => (
-            <rect
-              key={`${r}-${c}`}
-              x={c * (sq + gap)}
-              y={r * (sq + gap)}
-              width={sq}
-              height={sq}
-              rx={3}
-              fill="#4C1D95"
-              fillOpacity={opacity}
-            />
-          ))
+          row.map((opacity, c) => {
+            const delay = `${(r + c) * 0.08}s`;
+            return (
+              <rect
+                key={`${r}-${c}`}
+                x={c * (sq + gap)}
+                y={r * (sq + gap)}
+                width={sq}
+                height={sq}
+                rx={3}
+                fill="#A78BFA"
+                fillOpacity={opacity}
+                className={animated ? "logo-square" : undefined}
+                style={animated ? { animationDelay: delay } : undefined}
+              />
+            );
+          })
         )}
       </svg>
 
@@ -55,7 +61,7 @@ export default function Logo({ variant = "default" }) {
         aria-label="Toolbase Marketplace"
         overflow="visible"
       >
-        {/* "Toolbase" line — purple + dark, weight 500 */}
+        {/* "Toolbase" line — purple + white, weight 500 */}
         <text
           x="0"
           y="17"
@@ -65,7 +71,7 @@ export default function Logo({ variant = "default" }) {
           textLength={wordW}
           lengthAdjust="spacingAndGlyphs"
         >
-          <tspan fill="#4C1D95">Tool</tspan>
+          <tspan fill="#A78BFA">Tool</tspan>
           <tspan fill={baseColor}>base</tspan>
         </text>
 
@@ -76,7 +82,7 @@ export default function Logo({ variant = "default" }) {
           fontFamily="Inter, system-ui, -apple-system, sans-serif"
           fontSize="10.5"
           fontWeight="400"
-          fill={subColor}
+          fill={marketplaceColor}
           textLength={wordW}
           lengthAdjust="spacingAndGlyphs"
         >
