@@ -6,6 +6,7 @@ import ToolPage from "./pages/ToolPage";
 import CategoryPage from "./pages/CategoryPage";
 import ComparisonPage from "./pages/ComparisonPage";
 import BestForPage from "./pages/BestForPage";
+import UseCasesLanding from "./pages/UseCasesLanding";
 import SubmitTool from "./pages/SubmitTool";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/category/:slug" element={<CategoryPage />} />
           <Route path="/compare/:slug" element={<ComparisonPage />} />
           <Route path="/best-for/:slug" element={<BestForPage />} />
+          <Route path="/use-cases" element={<UseCasesLanding />} />
           <Route path="/use-cases/:slug" element={<BestForPage />} />
           <Route path="/submit" element={<SubmitTool />} />
           <Route path="/contact" element={<Contact />} />
