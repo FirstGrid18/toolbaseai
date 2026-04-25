@@ -23,6 +23,34 @@
   }
 }
 
+@keyframes pillShineSweep {
+  from { transform: translateX(-150%); }
+  to   { transform: translateX(280%); }
+}
+
+.pill-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.pill-shine::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(167, 139, 250, 0.38) 50%,
+    transparent 100%
+  );
+  animation: pillShineSweep 0.55s ease-out 1 both;
+  animation-delay: var(--pill-shine-delay, 0s);
+  pointer-events: none;
+}
+
 @keyframes logoSquarePop {
   0%, 100% { transform: scale(1); }
   40%       { transform: scale(1.35); }

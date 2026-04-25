@@ -143,17 +143,18 @@ export default function Home() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Quick filter row */}
         <div className="flex flex-wrap justify-center gap-2 pb-1 mb-4">
-          {QUICK_FILTERS.map((filter) => {
+          {QUICK_FILTERS.map((filter, i) => {
             const isActive = activeQuickFilter?.label === filter.label;
             return (
               <button
                 key={filter.label}
                 onClick={() => handleQuickFilter(filter)}
-                className={`flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium border transition-colors ${
+                className={`pill-shine flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium border transition-colors ${
                   isActive
                     ? "bg-[#4C1D95] text-white border-[#4C1D95]"
                     : "bg-white text-[#4C1D95] border-[#e0d9f0] hover:border-[#4C1D95]"
                 }`}
+                style={{ '--pill-shine-delay': `${i * 0.15}s` }}
               >
                 {filter.label}
               </button>
