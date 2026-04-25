@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import ComparisonTable from "../components/ComparisonTable";
 import brand from "../config/brand";
@@ -21,6 +21,8 @@ const sortedTools = [...tools].sort((a, b) => a.name.localeCompare(b.name));
 export default function ComparisonPage() {
   const { slug } = useParams();
   const preset = comparisons.find((c) => c.slug === slug);
+
+  if (!preset) return <Navigate to="/404" replace />;
 
   const [tool1Slug, setTool1Slug] = useState(
     preset?.tool1_slug ?? sortedTools[0]?.slug ?? ""
